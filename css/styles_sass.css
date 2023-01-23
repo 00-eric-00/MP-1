@@ -1,0 +1,194 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar1 {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+}
+
+#navbar {
+  background-color: black;
+}
+
+#navlist {
+  color: yellow;
+}
+
+#burgermenu {
+  background-color: yellow;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid blue;
+}
+
+#carouselxs {
+  margin-top: 2px;
+}
+
+.carousel-image {
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.carousel-image-2 {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.importantcards {
+  position: relative;
+  z-index: -1;
+}
+
+ul {
+  list-style: none;
+}
+
+#icon {
+  width: 30px;
+}
+
+.table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+
+#footerList {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#cbheading {
+  background-color: black;
+  margin: auto;
+  color: yellow;
+}
+
+#importantterms {
+  margin-bottom: auto;
+  background-color: black;
+  opacity: 0.8;
+}
+
+#calculationpage {
+  margin-bottom: auto;
+  background-color: black;
+  opacity: 0.8;
+  color: yellow;
+}
+
+#sftable {
+  margin-bottom: auto;
+  background-color: black;
+  opacity: 0.8;
+  color: yellow;
+}
+
+#faqpage {
+  background-color: black;
+  opacity: 0.8;
+  margin-bottom: auto;
+}
+
+#aboutpage {
+  background-color: black;
+  opacity: 0.8;
+  color: yellow;
+  margin-bottom: auto;
+}
+
+#aboutnav {
+  margin-bottom: auto;
+}
+
+#carouselxs {
+  margin-bottom: 70px;
+}
+
+#footer {
+  background-color: yellow;
+}
+
+#pcaption,
+#caption {
+  color: yellow;
+  background-color: black;
+}
+
+#xsfooter {
+  background-color: yellow;
+}
+
+#impterms {
+  background-color: black;
+  color: yellow;
+  opacity: 0.8;
+}
+
+.card {
+  background-color: yellow;
+}
+
+.card-title {
+  text-align: center;
+}
+
+#pgcalculation {
+  background-color: black;
+  opacity: 0.8;
+  color: yellow;
+}
+
+#copyright {
+  color: black;
+}
+
+#tble,
+td,
+th {
+  border: 1px solid;
+  color: yellow;
+}
+
+#tfaq {
+  background-color: black;
+  opacity: 0.8;
+  color: yellow;
+}
+
+#exampleModal {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
