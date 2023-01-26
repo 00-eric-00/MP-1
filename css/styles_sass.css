@@ -6,157 +6,71 @@ body {
   position: sticky;
   width: 100%;
   top: 0px;
-  z-index: 2;
-}
-
-#navbar {
+  z-index: 1;
   background-color: black;
-}
-
-#navlist {
-  color: yellow;
 }
 
 #burgermenu {
   background-color: yellow;
 }
 
-.nav-link:hover {
-  border-bottom: 2px solid blue;
-}
-
-#carouselxs {
-  margin-top: 2px;
-}
-
-.carousel-image {
-  position: relative;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-
-.carousel-image-2 {
-  position: relative;
-  margin-left: 100px;
-  margin-right: 100px;
-  height: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-
-.importantcards {
-  position: relative;
-  z-index: -1;
-}
-
 ul {
   list-style: none;
 }
 
-#icon {
-  width: 30px;
-}
-
-.table {
-  width: 100%;
-}
-
-td {
-  text-align: center;
-}
-
-#footerList {
-  position: relative;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-
-li a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-#cbheading {
-  background-color: black;
-  margin: auto;
+#navlist {
   color: yellow;
 }
 
-#importantterms {
-  margin-bottom: auto;
-  background-color: black;
-  opacity: 0.8;
-}
-
-#calculationpage {
-  margin-bottom: auto;
-  background-color: black;
-  opacity: 0.8;
-  color: yellow;
-}
-
-#sftable {
-  margin-bottom: auto;
-  background-color: black;
-  opacity: 0.8;
-  color: yellow;
-}
-
-#faqpage {
-  background-color: black;
-  opacity: 0.8;
-  margin-bottom: auto;
-}
-
-#aboutpage {
-  background-color: black;
-  opacity: 0.8;
-  color: yellow;
-  margin-bottom: auto;
-}
-
-#aboutnav {
-  margin-bottom: auto;
-}
-
-#carouselxs {
-  margin-bottom: 70px;
-}
-
-#footer {
-  background-color: yellow;
+.nav-link:hover {
+  border-bottom: 2px solid blue;
 }
 
 #pcaption,
 #caption {
+  background-color: rgba(0, 0, 0, 0.314);
   color: yellow;
-  background-color: black;
+}
+
+#cbheading {
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+#footer {
+  background-color: yellow;
+  width: 100%;
 }
 
 #xsfooter {
   background-color: yellow;
 }
 
+#icon {
+  width: 30px;
+}
+
+#copyright {
+  color: black;
+}
+
 #impterms {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.809);
   color: yellow;
-  opacity: 0.8;
+}
+
+#importantterms {
+  background-color: rgba(0, 0, 0, 0.809);
+  padding-bottom: 80px;
 }
 
 .card {
   background-color: yellow;
+  max-height: 300px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 .card-title {
@@ -164,31 +78,55 @@ li a {
 }
 
 #pgcalculation {
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.809);
   color: yellow;
 }
 
-#copyright {
-  color: black;
+#calculationpage {
+  background-color: rgba(0, 0, 0, 0.809);
 }
 
-#tble,
+#formtext {
+  color: yellow;
+}
+
+#tabletitle {
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  padding-top: 187px;
+  padding-bottom: 50px;
+}
+
+#sftable {
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  padding-top: 0px;
+  padding-bottom: 187px;
+}
+
+#tableborder,
 td,
 th {
   border: 1px solid;
   color: yellow;
+  margin: auto;
 }
 
 #tfaq {
-  background-color: black;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.809);
   color: yellow;
+  padding-top: 168px;
+  padding-bottom: 100px;
 }
 
-#exampleModal {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 1;
+#faqpage {
+  background-color: rgba(0, 0, 0, 0.809);
+  padding-bottom: 168px;
+}
+
+#aboutpage {
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  padding-top: 205px;
+  padding-bottom: 205px;
 }

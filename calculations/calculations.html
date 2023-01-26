@@ -11,23 +11,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/styles_sass.css" />
-    <link rel="icon" type="image/x-icon" href="../img/cb_favicon.jpg" />
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <!--navbar-->
     <div class="navbar1">
-			<nav class="navbar navbar-expand-lg" id="navbar">
+			<nav class="navbar navbar-expand-lg" id="">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="../index.html" id="navlist"
 						><img
 							src="../img/cb_favicon.jpg"
 							alt="Circuit Breaker"
-							id="cb_logo"
 							width="50px"
 							height="50px"
-						/>  CB Calculator</a
-					>
+						/>
+						CB Calculator
+					</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -37,14 +37,14 @@
 						<span class="navbar-toggler-icon" id="burgermenu"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link active" href="../index.html" id="navlist">Home</a>
+								<a class="nav-link active" href="../index.html" id="navlist"
+									>Home</a
+								>
 							</li>
 							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="../important_terms/important_terms.html" id="navlist"
+								<a class="nav-link" href="../important_terms/important_terms.html" id="navlist"
 									>Important Terms</a
 								>
 							</li>
@@ -57,16 +57,19 @@
 								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../table/table.html" id="navlist">Table</a>
+								<a class="nav-link" href="../table/table.html" id="navlist"
+									>Table</a
+								>
 							</li>
 							<li class="nav-item" id="navlist">
-								<a class="nav-link" href="../faq/faq.html" id="navlist">F.A.Q.</a>
+								<a class="nav-link" href="../faq/faq.html" id="navlist"
+									>F.A.Q.</a
+								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../about/about.html" id="navlist">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../about/about.html" id="navlist">Contact Us</a>
+								<a class="nav-link" href="../about/about.html" id="navlist"
+									>About & Contact Us</a
+								>
 							</li>
 						</ul>
 						<form class="d-flex justify-content-end">
@@ -75,7 +78,11 @@
 								type="search"
 								placeholder="Search"
 							/>
-							<button class="btn btn-outline-success" type="submit" id="navlist">
+							<button
+								class="btn btn-outline-success"
+								type="submit"
+								id="navlist"
+							>
 								Search
 							</button>
 						</form>
@@ -95,9 +102,14 @@
   </div>
 </div>
 <div id="calculationpage">
-  <form class="container-fluid w3-animate-opacity">
+  <form class="container-fluid w3-animate-opacity" id="formtext">
       <div class="row">
         <div class="col-lg-6">
+          <div class="fs-4 text-start ms-lg-5 mt-lg-3 mt-3 fw-bold">
+            Load Description
+          </div>
+          <p class="ms-5"><i> (Name the load. i.e. L.E.D., CFL, convenience outlet, waterpump, A.C.U. etc..)</i></p>
+  <input type="text" placeholder="L.E.D." class="ms-lg-5 pe-lg-5">
           <div class="fs-4 text-start ms-lg-5 mt-lg-3 mt-3 fw-bold">
             Type of Load
           </div>
@@ -107,19 +119,13 @@
             <p class="ms-lg-5 mb-1">Specify if:</p>
             <div class="ms-lg-5"><input type="radio" name="resistive" class="ms-lg-5 mb-3 ms-5"> Receptacle</input>
               <input type="radio" name="resistive" class="ms-lg-1 mb-lg-3"> Convenience outlet</input></div>
-            
-
           <span style="display: inline-block; width: 100%" class="text-start ms-lg-5"><input type="radio" name="typeofload" value="AC_and_waterpump" >
             <label for="AC_and_waterpump">Air Conditioning &amp; Water Pumps</label></span>
           <span style="display: inline-block; width: 100%" class="text-start ms-lg-5"><input type="radio" name="typeofload" value="Welders">
               <label for="Welders">Welders</label></span>
           <span style="display: inline-block; width: 100%" class="text-start ms-lg-5"><input type="radio" name="typeofload" value="Motors">
                 <label for="Motors">Motors</label></span>
-                <div class="fs-4 text-start ms-lg-5 mt-lg-3 mt-3 fw-bold">
-                  Load Description
-                </div>
-                <p class="ms-5"><i> (Name the load. i.e. L.E.D., CFL, convenience outlet, waterpump, A.C.U. etc..)</i></p>
-        <input type="text" placeholder="L.E.D." class="ms-lg-5 pe-lg-5">
+               
         <div class="fs-4 text-start ms-lg-5 mt-lg-3 mt-3 fw-bold">
           Number of loads
         </div>
@@ -159,9 +165,9 @@
         <input class="me-lg-5 mb-3 mb-lg-3" type="number" placeholder="0" min="0" max="1">
 <div class="pb-5">
   <button type="reset" class="btn btn-secondary bg-danger" data-bs-toggle="reset">Reset</button>
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="1">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+<div class="modal fade" id="exampleModal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -176,6 +182,7 @@
       </div>
     </div>
   </div>
+<!--end of modal-->
 </div>
 </div>
 </form>
@@ -183,9 +190,9 @@
 <!--end of calculation page-->
 <!--footer lg-->
 <footer id="footer" class="d-none d-lg-block w3-animate-opacity">
-  <div class="container-fluid pt-5">
+  <div class="container-fluid pt-3">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 d-none d-lg-block">
         <div class="text-center">
           <a href="https://www.facebook.com/"
             ><img src="../img/logo-facebook.svg" alt="" id="icon"
@@ -194,7 +201,7 @@
             ><img src="../img/logo-twitter.svg" alt="" id="icon"
           /></a>
           <a href="https://www.instagram.com/"
-            ><img src="../mg/logo-instagram.svg" alt="" id="icon"
+            ><img src="../img/logo-instagram.svg" alt="" id="icon"
           /></a>
           <a href="https://www.pinterest.ph/"
             ><img src="../img/logo-pinterest.svg" alt="" id="icon"
@@ -223,7 +230,7 @@
             ><img src="../img/logo-facebook.svg" alt="" id="icon"
           /></a>
           <a href="https://www.twitter.com/"
-            ><img src="../img/logo-twitter.svg" alt="" id="icon"
+            ><img src="img/logo-twitter.svg" alt="" id="icon"
           /></a>
           <a href="https://www.instagram.com/"
             ><img src="../img/logo-instagram.svg" alt="" id="icon"

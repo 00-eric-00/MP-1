@@ -12,24 +12,23 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 		<link rel="stylesheet" href="../css/styles_sass.css" />
-		<link rel="icon" type="image/x-icon" href="../img/cb_favicon.jpg" />
+		<link rel="icon" type="image/x-icon" href="../img/favicon.png" />
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 	</head>
 	<body>
 		<!--navbar-->
 		<div class="navbar1">
-			<nav class="navbar navbar-expand-lg" id="navbar">
+			<nav class="navbar navbar-expand-lg" id="">
 				<div class="container-fluid">
 					<a class="navbar-brand" href="../index.html" id="navlist"
 						><img
 							src="../img/cb_favicon.jpg"
 							alt="Circuit Breaker"
-							id="cb_logo"
 							width="50px"
 							height="50px"
 						/>
-						CB Calculator</a
-					>
+						CB Calculator
+					</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -70,12 +69,7 @@
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="../about/about.html" id="navlist"
-									>About</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../about/about.html" id="navlist"
-									>Contact Us</a
+									>About & Contact Us</a
 								>
 							</li>
 						</ul>
@@ -105,12 +99,12 @@
 		>
 			Important Terms
 		</div>
-		<div class="container-fluid pb-5 w3-animate-opacity" id="importantterms">
+		<div class="container-fluid w3-animate-opacity" id="importantterms">
 			<div class="row">
 				<div class="col-lg-4">
-					<div class="card mb-3 pb-4" style="max-width: 540px">
+					<div class="card">
 						<div class="card-body">
-							<h1 class="card-title">Resistive load</h1>
+							<h1 class="card-title fw-bold">Resistive load</h1>
 							<p class="card-text">
 								Loads that only comsumes active power and where current and
 								voltage are in phase with each other. Examples: incandescent
@@ -120,9 +114,9 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="card mb-3" style="max-width: 540px">
+					<div class="card">
 						<div class="card-body">
-							<h1 class="card-title">Inductive Load</h1>
+							<h1 class="card-title fw-bold">Inductive Load</h1>
 							<p class="card-text">
 								Load which only consumes reactive power and where the current
 								waveforms lags the voltage by 90 degree. Examples: Motors, Fans
@@ -132,21 +126,21 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="card mb-3" style="max-width: 540px">
+					<div class="card">
 						<div class="card-body">
-							<h1 class="card-title">Capacitive Load</h1>
+							<h1 class="card-title fw-bold">Capacitive Load</h1>
 							<p class="card-text">
 								Load which only consumes reactive power and where the current
 								waveforms leads the voltage by 90 degree. Capacitive loads are
-								intalled to improve the power factor of a load.
+								installed to improve the power factor of a load.
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="card mb-3" style="max-width: 540px">
+					<div class="card">
 						<div class="card-body">
-							<h1 class="card-title">Safety Factor</h1>
+							<h1 class="card-title fw-bold">Safety Factor</h1>
 							<p class="card-text">
 								The load-carrying capacity of a system beyond what the system
 								actually supports under a certain period of time.
@@ -155,9 +149,9 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="card mb-3" style="max-width: 540px">
+					<div class="card">
 						<div class="card-body">
-							<h1 class="card-title">Power Factor</h1>
+							<h1 class="card-title fw-bold">Power Factor</h1>
 							<p class="card-text">
 								The ratio of working power, measured in kilowatts (kW), to
 								apparent power, measured in kilovolt amperes (kVA).
@@ -166,9 +160,9 @@
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class="card mb-3 pb-4" style="max-width: 540px">
+					<div class="card">
 						<div class="card-body">
-							<h1 class="card-title">Branch Circuit</h1>
+							<h1 class="card-title fw-bold">Branch Circuit</h1>
 							<p class="card-text">
 								Any circuit that extends beyond the final overcurrent protective
 								device is called a branch circuit.
@@ -176,11 +170,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 d-none"></div>
-				<div class="offset-4 col-lg-4 d-none d-sm-block">
-					<div class="card mb-3" style="max-width: 540px">
+				<div class="offset-4 col-lg-4 d-none d-lg-block">
+					<div class="card">
 						<div class="card-body">
-							<h1 class="card-title">Schedule of loads</h1>
+							<h1 class="card-title fw-bold">Schedule of loads</h1>
 							<p class="card-text">
 								Summary of data to easily identify and facilitate the necessary
 								values and equipment rating to be used in any electrical
@@ -190,10 +183,10 @@
 					</div>
 				</div>
 				<!--xs-->
-				<div class="col-lg-4 d-block d-sm-none">
-					<div class="card mb-3" style="max-width: 540px">
+				<div class="col-lg-4 d-block d-md-block d-lg-none">
+					<div class="card">
 						<div class="card-body">
-							<h1 class="card-title">Schedule of loads</h1>
+							<h1 class="card-title fw-bold">Schedule of loads</h1>
 							<p class="card-text">
 								Summary of data to easily identify and facilitate the necessary
 								values and equipment rating to be used in any electrical
@@ -208,7 +201,7 @@
 		<!--end of important terms page-->
 		<!--footer lg-->
 		<footer id="footer" class="d-none d-lg-block w3-animate-opacity">
-			<div class="container-fluid pt-5">
+			<div class="container-fluid pt-3">
 				<div class="row">
 					<div class="col-12 d-none d-lg-block">
 						<div class="text-center">
@@ -219,7 +212,7 @@
 								><img src="../img/logo-twitter.svg" alt="" id="icon"
 							/></a>
 							<a href="https://www.instagram.com/"
-								><img src="../mg/logo-instagram.svg" alt="" id="icon"
+								><img src="../img/logo-instagram.svg" alt="" id="icon"
 							/></a>
 							<a href="https://www.pinterest.ph/"
 								><img src="../img/logo-pinterest.svg" alt="" id="icon"
@@ -248,7 +241,7 @@
 								><img src="../img/logo-facebook.svg" alt="" id="icon"
 							/></a>
 							<a href="https://www.twitter.com/"
-								><img src="../img/logo-twitter.svg" alt="" id="icon"
+								><img src="img/logo-twitter.svg" alt="" id="icon"
 							/></a>
 							<a href="https://www.instagram.com/"
 								><img src="../img/logo-instagram.svg" alt="" id="icon"
