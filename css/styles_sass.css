@@ -6,7 +6,7 @@ body {
   position: sticky;
   width: 100%;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   background-color: black;
 }
 
@@ -30,6 +30,10 @@ ul {
 #caption {
   background-color: rgba(0, 0, 0, 0.314);
   color: yellow;
+}
+
+#prevnext {
+  z-index: 1;
 }
 
 #cbheading {
