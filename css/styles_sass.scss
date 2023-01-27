@@ -31,15 +31,23 @@ ul {
 #cbheading {
 	background-color: rgba(0, 0, 0, 0.809);
 	color: yellow;
-	padding-top: 90px;
-	padding-bottom: 90px;
+	max-height: fit-content;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 #footer {
 	background-color: yellow;
-	width: 100%;
+	min-width: fit-content;
+	min-height: fit-content;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 #xsfooter {
 	background-color: yellow;
+	min-width: fit-content;
+	min-height: fit-content;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 #icon {
 	width: 30px;
