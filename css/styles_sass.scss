@@ -1,119 +1,165 @@
 body {
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+// navbar css
 .navbar1 {
-	position: sticky;
-	width: 100%;
-	top: 0px;
-	z-index: 2;
-	background-color: black;
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  background-color: black;
 }
 #burgermenu {
-	background-color: yellow;
+  background-color: yellow;
 }
 ul {
-	list-style: none;
+  list-style: none;
 }
 #navlist {
-	color: yellow;
+  color: yellow;
 }
 .nav-link:hover {
-	border-bottom: 2px solid blue;
+  border-bottom: 2px solid yellow;
 }
+.search-btn {
+  color: yellow;
+  z-index: -1;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+// navbar css end
+
+// home page css
 #pcaption,
 #caption {
-	background-color: rgba(0, 0, 0, 0.314);
-	color: yellow;
+  background-color: rgba(0, 0, 0, 0.314);
+  color: yellow;
 }
 #prevnext {
-	z-index: 1;
+  z-index: 1;
 }
 #cbheading {
-	background-color: rgba(0, 0, 0, 0.809);
-	color: yellow;
-	max-height: fit-content;
-	padding-top: 20px;
-	padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  max-height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+// home page css end
+
+// footer css lg view
 #footer {
-	background-color: yellow;
-	min-width: fit-content;
-	min-height: fit-content;
-	padding-top: 30px;
-	padding-bottom: 10px;
+  background-color: yellow;
+  min-width: fit-content;
+  min-height: fit-content;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  bottom: 0px;
+  width: 100%;
 }
+// footer css lg view end
+
+// footer css xs view
 #xsfooter {
-	background-color: yellow;
-	min-width: fit-content;
-	min-height: fit-content;
-	padding-top: 30px;
-	padding-bottom: 10px;
+  background-color: yellow;
+  min-width: fit-content;
+  min-height: fit-content;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  bottom: 0px;
+  width: 100%;
 }
 #icon {
-	width: 30px;
+  width: 30px;
 }
 #copyright {
-	color: black;
+  color: black;
 }
+// footer css xs view
+
+// important terms page
 #impterms {
-	background-color: rgba(0, 0, 0, 0.809);
-	color: yellow;
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
 }
 #importantterms {
-	background-color: rgba(0, 0, 0, 0.809);
-	padding-bottom: 80px;
+  background-color: rgba(0, 0, 0, 0.809);
+  padding-bottom: 80px;
 }
 .card {
-	background-color: yellow;
-	max-height: 300px;
-	height: 200px;
-	margin-bottom: 20px;
+  background-color: yellow;
+  max-height: 300px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 .card-title {
-	text-align: center;
+  text-align: center;
 }
+// important terms page end
+
+// calculation page
 #pgcalculation {
-	background-color: rgba(0, 0, 0, 0.809);
-	color: yellow;
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
 }
 #calculationpage {
-	background-color: rgba(0, 0, 0, 0.809);
+  background-color: rgba(0, 0, 0, 0.809);
 }
 #formtext {
-	color: yellow;
+  color: yellow;
 }
 #tabletitle {
-	background-color: rgba(0, 0, 0, 0.809);
-	color: yellow;
-	padding-top: 187px;
-	padding-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  padding-top: 187px;
+  padding-bottom: 50px;
 }
+.btn-close {
+  color: yellow;
+}
+#modal_body,
+.modal-header,
+.modal-footer {
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.809);
+}
+modal_btn {
+  color: yellow;
+}
+// calculation page end
+
+// safety factor table page
 #sftable {
-	background-color: rgba(0, 0, 0, 0.809);
-	color: yellow;
-	padding-top: 0px;
-	padding-bottom: 187px;
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  padding-top: 0px;
+  padding-bottom: 187px;
 }
 #tableborder,
 td,
 th {
-	border: 1px solid;
-	color: yellow;
-	margin: auto;
+  border: 1px solid;
+  color: yellow;
+  margin: auto;
 }
+// safety factor table page end
+
+// faq and about us page
 #tfaq {
-	background-color: rgba(0, 0, 0, 0.809);
-	color: yellow;
-	padding-top: 168px;
-	padding-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  padding-top: 168px;
+  padding-bottom: 100px;
 }
 #faqpage {
-	background-color: rgba(0, 0, 0, 0.809);
-	padding-bottom: 168px;
+  background-color: rgba(0, 0, 0, 0.809);
+  padding-bottom: 168px;
 }
 #aboutpage {
-	background-color: rgba(0, 0, 0, 0.809);
-	color: yellow;
-	padding-top: 205px;
-	padding-bottom: 205px;
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  padding-top: 205px;
+  padding-bottom: 205px;
 }
+// faq and about us page

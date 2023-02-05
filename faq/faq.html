@@ -1,247 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>F.A.Q. - Circuit Breaker Calculator</title>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-		/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-		<link rel="stylesheet" href="../css/styles_sass.css" />
-		<link rel="icon" type="image/x-icon" href="../img/favicon.png" />
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-	</head>
-	<body>
-		<!--navbar-->
-		<div class="navbar1">
-			<nav class="navbar navbar-expand-lg" id="">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="../index.html" id="navlist"
-						><img
-							src="../img/cb_favicon.jpg"
-							alt="Circuit Breaker"
-							width="50px"
-							height="50px"
-						/>
-						CB Calculator
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-					>
-						<span class="navbar-toggler-icon" id="burgermenu"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active" href="../index.html" id="navlist"
-									>Home</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="../important_terms/important_terms.html"
-									id="navlist"
-									>Important Terms</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="../calculations/calculations.html"
-									id="navlist"
-									>Calculations</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../table/table.html" id="navlist"
-									>Table</a
-								>
-							</li>
-							<li class="nav-item" id="navlist">
-								<a class="nav-link" href="faq.html" id="navlist">F.A.Q.</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../about/about.html" id="navlist"
-									>About & Contact Us</a
-								>
-							</li>
-						</ul>
-						<form class="d-flex justify-content-end">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="Search"
-							/>
-							<button
-								class="btn btn-outline-success"
-								type="submit"
-								id="navlist"
-							>
-								Search
-							</button>
-						</form>
-					</div>
-				</div>
-			</nav>
-		</div>
-		<!--end of navbar-->
-		<!--faq-->
-		<div class="container-fluid text-center w3-animate-opacity" id="tfaq">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="display-6">F.A.Q.</div>
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid w3-animate-opacity" id="faqpage">
-			<div class="accordion" id="accordionExample">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingOne">
-						<button
-							class="accordion-button collapsed fw-bold"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#collapseOne"
-							id="adheader"
-						>
-							Why use circuit breaker?
-						</button>
-					</h2>
-					<div
-						id="collapseOne"
-						class="accordion-collapse collapse"
-						data-bs-parent="#accordionExample"
-					>
-						<div class="accordion-body">
-							Equipment are designed to work at an allowed current. If equipment
-							current exceeds the allowed current for a long duration, it may
-							damage equipment and might also catch fire. In order to protect
-							equipment from overload and short circuit, breakers are used which
-							disconnects the equipment after a certain delay if any fault or
-							overloading condition occurs.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingTwo">
-						<button
-							class="accordion-button collapsed fw-bold"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#collapseTwo"
-						>
-							Why accurately size circuit breaker?
-						</button>
-					</h2>
-					<div
-						id="collapseTwo"
-						class="accordion-collapse collapse"
-						data-bs-parent="#accordionExample"
-					>
-						<div class="accordion-body">
-							For better reliability purpose it is important to properly
-							calculate breaker size. <br />
-							- Over size breaker will not trip under low fault or high
-							overloading condition. <br />
-							- Under size breaker will issue trip under normal condition.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingThree">
-						<button
-							class="accordion-button collapsed fw-bold"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#collapseThree"
-						>
-							How circuit breaker works?
-						</button>
-					</h2>
-					<div
-						id="collapseThree"
-						class="accordion-collapse collapse"
-						data-bs-parent="#accordionExample"
-					>
-						<div class="accordion-body">
-							It interrupts the flow of electrical current when it exceeds a
-							predetermined amount, which is where a circuit breaker's ratings
-							come into play.
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--end of faq page-->
-		<!--footer lg-->
-		<footer id="footer" class="d-none d-lg-block w3-animate-opacity">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 d-none d-lg-block">
-						<div class="text-center">
-							<a href="https://www.facebook.com/"
-								><img src="../img/logo-facebook.svg" alt="" id="icon"
-							/></a>
-							<a href="https://www.twitter.com/"
-								><img src="../img/logo-twitter.svg" alt="" id="icon"
-							/></a>
-							<a href="https://www.instagram.com/"
-								><img src="../img/logo-instagram.svg" alt="" id="icon"
-							/></a>
-							<a href="https://www.pinterest.ph/"
-								><img src="../img/logo-pinterest.svg" alt="" id="icon"
-							/></a>
-							<a href="https://www.linkedin.com/"
-								><img src="../img/logo-linkedin.svg" alt="" id="icon"
-							/></a>
-						</div>
-					</div>
-				</div>
-				<div class="row" id="copyright">
-					<div class="col-12 text-center">
-						<p>Copyright © 2023 CB Calculator. All Rights Reserved.</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!--end of footer lg-->
-		<!--footer xs-->
-		<footer id="xsfooter" class="d-block d-lg-none w3-animate-opacity">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 d-block d-lg-none">
-						<div class="text-center">
-							<a href="https://www.facebook.com/"
-								><img src="../img/logo-facebook.svg" alt="" id="icon"
-							/></a>
-							<a href="https://www.twitter.com/"
-								><img src="img/logo-twitter.svg" alt="" id="icon"
-							/></a>
-							<a href="https://www.instagram.com/"
-								><img src="../img/logo-instagram.svg" alt="" id="icon"
-							/></a>
-							<a href="https://www.pinterest.ph/"
-								><img src="../img/logo-pinterest.svg" alt="" id="icon"
-							/></a>
-							<a href="https://www.linkedin.com/"
-								><img src="../img/logo-linkedin.svg" alt="" id="icon"
-							/></a>
-						</div>
-					</div>
-				</div>
-				<div class="row text-center" id="copyright">
-					<p>Copyright © 2023 CB Calculator. All Rights Reserved.</p>
-				</div>
-			</div>
-		</footer>
-		<!--end footer xs-->
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F.A.Q. - Circuit Breaker Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/styles_sass.css" />
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <div class="navbar1">
+      <nav class="navbar navbar-expand-lg" id="">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html" id="navlist"
+            ><img
+              src="../img/cb_favicon.jpg"
+              alt="Circuit Breaker"
+              width="50px"
+              height="50px"
+            />
+            CB Calculator
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon" id="burgermenu"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html" id="navlist"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../important_terms/important_terms.html"
+                  id="navlist"
+                  >Important Terms</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../calculations/calculations.html"
+                  id="navlist"
+                  >Calculations</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../table/table.html" id="navlist"
+                  >Table</a
+                >
+              </li>
+              <li class="nav-item" id="navlist">
+                <a class="nav-link" href="faq.html" id="navlist">F.A.Q.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about/about.html" id="navlist"
+                  >About & Contact Us</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex justify-content-end">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+              />
+              <button class="search btn btn-outline" type="submit" id="navlist">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--end of navbar-->
+    <!--faq-->
+    <div class="container-fluid text-center w3-animate-opacity" id="tfaq">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="display-6">Frequently Asked Questions</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid w3-animate-opacity" id="faqpage">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              id="adheader"
+            >
+              Why use circuit breaker?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Equipment are designed to work at an allowed current. If equipment
+              current exceeds the allowed current for a long duration, it may
+              damage equipment and might also catch fire. In order to protect
+              equipment from overload and short circuit, breakers are used which
+              disconnects the equipment after a certain delay if any fault or
+              overloading condition occurs.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+            >
+              Why accurately size circuit breaker?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              For better reliability purpose it is important to properly
+              calculate breaker size. <br />
+              - Over size breaker will not trip under low fault or high
+              overloading condition. <br />
+              - Under size breaker will issue trip under normal condition.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed fw-bold"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+            >
+              How circuit breaker works?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              It interrupts the flow of electrical current when it exceeds a
+              predetermined amount, which is where a circuit breaker's ratings
+              come into play.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of faq page-->
+    <!--footer lg-->
+    <footer id="footer" class="d-none d-lg-block w3-animate-opacity">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-none d-lg-block">
+            <div class="text-center">
+              <a href="https://www.facebook.com/"
+                ><img src="../img/logo-facebook.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.twitter.com/"
+                ><img src="../img/logo-twitter.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="../img/logo-instagram.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.pinterest.ph/"
+                ><img src="../img/logo-pinterest.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.linkedin.com/"
+                ><img src="../img/logo-linkedin.svg" alt="" id="icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="copyright">
+          <div class="col-12 text-center">
+            <p>Copyright © 2023 CB Calculator. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end of footer lg-->
+    <!--footer xs-->
+    <footer id="xsfooter" class="d-block d-lg-none w3-animate-opacity">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-block d-lg-none">
+            <div class="text-center">
+              <a href="https://www.facebook.com/"
+                ><img src="../img/logo-facebook.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.twitter.com/"
+                ><img src="img/logo-twitter.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="../img/logo-instagram.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.pinterest.ph/"
+                ><img src="../img/logo-pinterest.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.linkedin.com/"
+                ><img src="../img/logo-linkedin.svg" alt="" id="icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center" id="copyright">
+          <p>Copyright © 2023 CB Calculator. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!--end footer xs-->
+  </body>
 </html>

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/styles_sass.css" />
     <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="../js/cb.js"></script>
   </head>
   <body>
     <!--navbar-->
@@ -78,13 +79,9 @@
 								type="search"
 								placeholder="Search"
 							/>
-							<button
-								class="btn btn-outline-success"
-								type="submit"
-								id="navlist"
-							>
-								Search
-							</button>
+							<button class="search btn btn-outline" type="submit" id="navlist">
+                Search
+              </button>
 						</form>
 					</div>
 				</div>
@@ -114,11 +111,11 @@
             Type of Load
           </div>
           <p class="ms-none ms-lg-5"><i> (Electrical appliances or devices used.)</i></p>
-          <span style="display: inline-block; width: 100%" class="text-start ms-lg-5 mb-2"><input type="radio" name="typeofload" value="resistiveLoad" checked="checked">
-            <label for="resistiveLoad">Resistive  Loads</label></span>
+          <div class="text-start ms-lg-5 mb-2"><input type="radio" name="typeofload" id="resistiveLoad" checked="checked">
+            <label for="resistiveLoad">Resistive  Loads</label></div>
             <p class="ms-lg-5 mb-1">Specify if:</p>
-            <div class="ms-lg-5"><input type="radio" name="resistive" class="ms-lg-5 mb-3 ms-5"> Receptacle</input>
-              <input type="radio" name="resistive" class="ms-lg-1 mb-lg-3"> Convenience outlet</input></div>
+            <div class="ms-lg-5"><input type="radio" name="resistive" class="ms-lg-5 mb-3 ms-5" id="receptacle" onclick="radio()"> Receptacle</input>
+              <input type="radio" name="resistive" class="ms-lg-1 mb-lg-3" id="outlet"> Convenience outlet</input></div>
           <span style="display: inline-block; width: 100%" class="text-start ms-lg-5"><input type="radio" name="typeofload" value="AC_and_waterpump" >
             <label for="AC_and_waterpump">Air Conditioning &amp; Water Pumps</label></span>
           <span style="display: inline-block; width: 100%" class="text-start ms-lg-5"><input type="radio" name="typeofload" value="Welders">
@@ -166,18 +163,18 @@
 <div class="pb-5">
   <button type="reset" class="btn btn-secondary bg-danger" data-bs-toggle="reset">Reset</button>
 <!-- Modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
-<div class="modal fade" id="exampleModal" tabindex="-1">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submit_modal">Submit</button>
+<div class="modal fade" id="submit_modal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="submit_modal"></h5>
+        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" tabindex="1"></button>
       </div>
-      <div class="modal-body" style="color: black;">Add a new branch circuit?</div>
+      <div class="modal-body" id="modal_body">Add a new branch circuit?</div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Add</button>
-          <button type="button" class="btn btn-primary">Create Schedule of Loads</button>
+          <button type="button" class="btn bg-danger" data-bs-dismiss="modal" id="modal_btn">Add</button>
+          <button type="button" id="modal_btn" class="btn bg-primary">Create Schedule of Loads</button>
         </div>
       </div>
     </div>

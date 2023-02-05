@@ -23,7 +23,14 @@ ul {
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid yellow;
+}
+
+.search-btn {
+  color: yellow;
+  z-index: -1;
+  border: 1px solid;
+  border-collapse: collapse;
 }
 
 #pcaption,
@@ -56,6 +63,8 @@ ul {
   min-height: fit-content;
   padding-top: 30px;
   padding-bottom: 10px;
+  bottom: 0px;
+  width: 100%;
 }
 
 #xsfooter {
@@ -68,6 +77,8 @@ ul {
   min-height: fit-content;
   padding-top: 30px;
   padding-bottom: 10px;
+  bottom: 0px;
+  width: 100%;
 }
 
 #icon {
@@ -117,6 +128,21 @@ ul {
   color: yellow;
   padding-top: 187px;
   padding-bottom: 50px;
+}
+
+.btn-close {
+  color: yellow;
+}
+
+#modal_body,
+.modal-header,
+.modal-footer {
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.809);
+}
+
+modal_btn {
+  color: yellow;
 }
 
 #sftable {
