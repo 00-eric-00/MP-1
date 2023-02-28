@@ -5,6 +5,8 @@ td {
   border: 1px solid;
   border-collapse: collapse;
   padding: 10px;
+  color: yellow;
+  background-color: black;
 }
 th {
   justify-content: center;
@@ -19,4 +21,7 @@ tr {
 .icon {
   width: 40px;
   height: 40px;
+}
+#footer {
+  background-color: yellow;
 }

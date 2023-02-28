@@ -115,8 +115,10 @@ ul {
   color: yellow;
 }
 
-#calculationpage {
+#calculationpage,
+.modal-body {
   background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
 }
 
 #formtext {

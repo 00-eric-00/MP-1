@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="../schedule_of_loads_css/schedule_of_loads.css"
     />
+
     <!-- end of styles -->
     <link
       rel="shortcut icon"
@@ -29,7 +30,7 @@
     />
     <title>Schedule of Loads | CB Calculator</title>
   </head>
-  <body>
+  <body id="sc-body">
     <!-- nav bar section -->
     <div id="schedule_of_loads_navbar">
       <nav class="navbar navbar-expand-lg">
@@ -74,7 +75,7 @@
       </nav>
     </div>
     <!-- end of navbar section -->
-    <h1>Schedule Of Loads</h1>
+    <h1 id="schedule_of_loads">Schedule Of Loads</h1>
     <table id="load_schedule">
       <thead>
         <tr>
@@ -94,128 +95,21 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 d-none d-lg-block">
-            <div class="container-fluid">
-              <img src="../../../img/logo.png" alt="" class="image-fluid" />
-            </div>
-            <!-- contact us -->
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Contact Us
-            </button>
-            <!-- Modal -->
-            <form
-              method="post"
-              action="https://script.google.com/macros/s/AKfycbxBPraRBRWPBm3NpKoacPZLRp_1BMtCo3H_pYcgdrjyPT7-8gFf1ZQ5mxPUNsV8wqfhyw/exec"
-            >
-              <div class="modal fade" id="exampleModal" tabindex="-1">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">
-                        Contact Information
-                      </h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div>
-                            <label for="First Name">First Name:</label>
-                            <input
-                              type="text"
-                              name="First Name"
-                              placeholder="Juan"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label for="Last Name">Last Name:</label>
-                            <input
-                              type="text"
-                              name="Last Name"
-                              placeholder="dela Cruz"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label for="Email">Email:</label>
-                            <input
-                              type="email"
-                              name="Email"
-                              placeholder="Enter your email"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label for="Phone no.">Phone no:</label>
-                            <input
-                              type="text"
-                              name="Phone no."
-                              placeholder="09123456"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label for="Address">Address:</label>
-                            <input
-                              type="text"
-                              name="Address"
-                              placeholder="Manila"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label for="Message">Message:</label>
-                            <input
-                              type="text"
-                              name="Message"
-                              placeholder="Message"
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button
-                        type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="submit" class="btn btn-primary">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <!-- end of contact us -->
             <div class="text-center">
               <a href="https://www.facebook.com/"
-                ><img src="../../../img/logo-facebook.svg" alt="" class="icon"
+                ><img src="../../img/logo-facebook.svg" alt="" class="icon"
               /></a>
               <a href="https://www.twitter.com/"
-                ><img src="../../../img/logo-twitter.svg" alt="" class="icon"
+                ><img src="../../img/logo-twitter.svg" alt="" class="icon"
               /></a>
               <a href="https://www.instagram.com/"
-                ><img src="../../../img/logo-instagram.svg" alt="" class="icon"
+                ><img src="../../img/logo-instagram.svg" alt="" class="icon"
               /></a>
               <a href="https://www.pinterest.ph/"
-                ><img src="../../../img/logo-pinterest.svg" alt="" class="icon"
+                ><img src="../../img/logo-pinterest.svg" alt="" class="icon"
               /></a>
               <a href="https://www.linkedin.com/"
-                ><img src="../../../img/logo-linkedin.svg" alt="" class="icon"
+                ><img src="../../img/logo-linkedin.svg" alt="" class="icon"
               /></a>
             </div>
           </div>
@@ -228,13 +122,35 @@
       </div>
     </footer>
     <!--end of footer lg-->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <!--footer xs-->
+    <footer id="xsfooter" class="d-block d-lg-none w3-animate-opacity">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-block d-lg-none">
+            <div class="text-center">
+              <a href="https://www.facebook.com/"
+                ><img src="../../img/logo-facebook.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.twitter.com/"
+                ><img src="../../img/logo-twitter.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="../../img/logo-instagram.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.pinterest.ph/"
+                ><img src="../../img/logo-pinterest.svg" alt="" id="icon"
+              /></a>
+              <a href="https://www.linkedin.com/"
+                ><img src="../../img/logo-linkedin.svg" alt="" id="icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center" id="copyright">
+          <p>Copyright © 2023 CB Calculator. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!--end footer xs-->
   </body>
 </html>
