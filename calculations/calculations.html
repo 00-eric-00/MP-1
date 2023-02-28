@@ -106,7 +106,7 @@
             Load Description
           </div>
           <p class="ms-none ms-lg-5"><i> (Name the load. i.e. L.E.D., CFL, convenience outlet, waterpump, A.C.U. etc..)</i></p>
-  <input type="text" placeholder="L.E.D." class="ms-lg-5 pe-lg-5">
+  <input type="text" placeholder="L.E.D." class="ms-lg-5" id="load_description">
           <div class="fs-4 text-start ms-lg-5 mt-lg-3 mt-3 fw-bold">
             Type of Load
           </div>
@@ -114,7 +114,7 @@
           <div class="text-start ms-lg-5 mb-2"><input type="radio" name="typeofload" id="resistiveLoad" checked="checked">
             <label for="resistiveLoad">Resistive  Loads</label></div>
             <p class="ms-lg-5 mb-1">Specify if:</p>
-            <div class="ms-lg-5"><input type="radio" name="resistive" class="ms-lg-5 mb-3 ms-5" id="receptacle" onclick="radio()"> Receptacle</input>
+            <div class="ms-lg-5"><input type="radio" name="resistive" class="ms-lg-5 mb-3 ms-5" id="receptacle" onclick=""> Receptacle</input>
               <input type="radio" name="resistive" class="ms-lg-1 mb-lg-3" id="outlet"> Convenience outlet</input></div>
           <span style="display: inline-block; width: 100%" class="text-start ms-lg-5"><input type="radio" name="typeofload" value="AC_and_waterpump" >
             <label for="AC_and_waterpump">Air Conditioning &amp; Water Pumps</label></span>

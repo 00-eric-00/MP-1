@@ -1,0 +1,34 @@
+.icon {
+  width: 40px;
+  height: 40px;
+}
+#nav-list {
+  list-style: none;
+}
+.nav-icon {
+  width: 10px;
+  height: 10px;
+}
+
+#nav-bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 300px;
+  max-height: fit-content;
+  padding-bottom: 100%;
+  background-color: black;
+  color: white;
+}
+#page-bg {
+  background-color: yellow;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+#logo-icon {
+  padding-top: 100px;
+}
