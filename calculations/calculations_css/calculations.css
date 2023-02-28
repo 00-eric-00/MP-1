@@ -32,3 +32,50 @@ a:active {
 #logo-icon {
   padding-top: 100px;
 }
+.navbar1 {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 2;
+  background-color: black;
+  color: yellow;
+}
+#navlist {
+  color: yellow;
+}
+.nav-link:hover {
+  border-bottom: 2px solid yellow;
+}
+#footer {
+  background-color: yellow;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  bottom: 0px;
+  width: 100%;
+}
+
+#xsfooter {
+  background-color: yellow;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  bottom: 0px;
+  width: 100%;
+}
+#final-data-input,
+#calculation {
+  background-color: rgba(0, 0, 0, 0.809);
+  color: yellow;
+  margin-bottom: 0px;
+}
